@@ -1,0 +1,35 @@
+:root {
+    --page: #edf5f4;
+    --ink: #173b3a;
+    --accent: #13645d;
+    --muted: #526866;
+    --error: #a52222;
+}
+
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 24px;
+    background: var(--page);
+    color: var(--ink);
+    font-family: Arial, sans-serif;
+}
+.verification-card {
+    max-width: 480px;
+    margin: 48px auto;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #c9dbd8;
+    border-radius: 16px;
+}
+.brand { color: var(--accent); font-weight: 700; }
+h1 { font-size: 28px; }
+.intro, .help, .local-note { color: var(--muted); line-height: 1.5; }
+label { display: block; font-weight: 700; margin: 24px 0 8px; }
+input, button { font: inherit; padding: 12px; }
+input { width: 100%; border: 1px solid #7b9792; border-radius: 8px; }
+button { border: 0; border-radius: 8px; background: var(--accent); color: #fff; cursor: pointer; }
+.error { color: var(--error); }
+.status, .local-note, .help { font-size: 14px; }
+/* TODO: finish spacing, full-width button, focus/invalid/disabled styles and
+   the small-screen layout using UI_REFERENCE.svg and REQUIREMENTS_AND_TESTS.txt. */

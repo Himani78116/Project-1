@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Verify your registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="verification-card">
+        <p class="brand">Growth Travel Agency India</p>
+        <h1>Verify your registration</h1>
+        <p class="intro">Enter your six-digit verification code to continue.</p>
+        <form id="verification-form" novalidate>
+            <label for="verification-code">Verification code</label>
+            <input id="verification-code" name="verification-code" type="text"
+                   aria-describedby="code-help code-error" autocomplete="one-time-code">
+            <p id="code-help" class="help">Use exactly 6 digits, including any leading zero.</p>
+            <p id="code-error" class="error" role="alert" hidden></p>
+            <button id="submit-button" type="submit">Submit</button>
+        </form>
+        <p id="form-status" class="status" role="status" aria-live="polite">Starter mode: validation is not implemented.</p>
+        <p class="local-note">Local UI exercise. No code is sent or authenticated.</p>
+    </main>
+</body>
+</html>
